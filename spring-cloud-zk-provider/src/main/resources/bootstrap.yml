@@ -1,0 +1,13 @@
+server:
+  port: 8023
+  servlet.context-path: /provider
+spring:
+  application:
+    name: zk-provider
+  cloud:
+    zookeeper:
+      connect-string: localhost:2181
+      enabled: true
+      discovery:
+        register: true
+        root: /server # 在zookeeper中的注册目录
