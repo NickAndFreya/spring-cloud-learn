@@ -8,6 +8,7 @@
         <version>2.1.13.RELEASE</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
+    <packaging>pom</packaging>
     <groupId>com.freya</groupId>
     <artifactId>spring-cloud-learn</artifactId>
     <version>0.0.1-SNAPSHOT</version>
@@ -17,6 +18,13 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
+    <modules>
+        <module>spring-cloud-common-api</module>
+        <module>spring-cloud-zk-consumer</module>
+        <module>spring-cloud-zk-provider</module>
+        <module>spring-cloud-zk-zuul</module>
+    </modules>
 
     <dependencies>
         <dependency>
@@ -28,6 +36,18 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
+        </dependency>
+        <!--alibaba fastjson-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.49</version>
+        </dependency>
+        <!-- google的集合 -->
+        <dependency>
+            <groupId>com.google.collections</groupId>
+            <artifactId>google-collections</artifactId>
+            <version>1.0</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
