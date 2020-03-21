@@ -17,7 +17,7 @@
     server.servlet.context-path=/consumer
     #服务注册到eureka cluster中
     eureka.client.service-url.defaultZone=http://localhost:8020/eureka,http://localhost:8021/eureka
-    eureka.instance.hostname=server-consumer
+    #此配置和解决unknow server的问题
     ribbon.eureka.enabled=true
     
 ### 服务注册与启用远程调用

@@ -12,8 +12,7 @@
     server.servlet.context-path=/provider
     #注册到eureka集群中
     eureka.client.service-url.defaultZone=http://localhost:8020/eureka,http://localhost:8021/eureka
-    #eureka 实例名称和服务名称保持一致
-    eureka.instance.hostname=server-provider
+  
 
 ### 开启服务注册
     启动类上添加@EnableDiscoveryClient 开启服务注册与发现
