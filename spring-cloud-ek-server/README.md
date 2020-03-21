@@ -21,8 +21,8 @@
     #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。多个地址可使用 , 分隔。
     #配置node2的端口，实现注册中心相互注册
     eureka.client.service-url.defaultZone=http://localhost:8021/eureka
-    # eureka 实例名称和应用名称保持一致
-    eureka.instance.hostname=eureka-server-node1
+    # eureka host 配置
+    eureka.instance.hostname=localhost
         
 ####  application-node2.properties 配置 
     server.port=8021
@@ -35,5 +35,5 @@
     #设置与Eureka Server交互的地址，查询服务和注册服务都需要依赖这个地址。多个地址可使用 , 分隔。
     #配置node1的端口，实现注册中心相互注册
     eureka.client.service-url.defaultZone=http://localhost:8020/eureka
-    #eureka 实例名称和应用服务名称保持一致
-    eureka.instance.hostname=eureka-server-node2   
+    # eureka host 配置
+    eureka.instance.hostname=localhost 
