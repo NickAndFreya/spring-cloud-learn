@@ -1,4 +1,4 @@
-package com.freya.eureka.consumer;
+package com.freya.eureka.consumer.feign;
 
 import com.freya.common.api.model.AppleModel;
 import org.springframework.cloud.openfeign.FeignClient;

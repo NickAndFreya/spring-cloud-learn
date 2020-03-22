@@ -1,4 +1,4 @@
-package com.freya.eureka.provider;
+package com.freya.eureka.provider.service;
 
 import com.freya.common.api.constant.Constant;
 import com.freya.common.api.filter.Filter;

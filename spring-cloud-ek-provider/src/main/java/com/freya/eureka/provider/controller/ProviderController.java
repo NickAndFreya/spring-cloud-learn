@@ -1,6 +1,7 @@
-package com.freya.eureka.consumer;
+package com.freya.eureka.provider.controller;
 
 import com.freya.common.api.model.AppleModel;
+import com.freya.eureka.provider.service.AppleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -10,16 +11,16 @@ import java.util.List;
 /**
  * @author chengpiny
  * @version 1.0.0
- * @date 2020/3/21 23:02
+ * @date 2020/3/20 17:03
  */
 @RestController
-public class ConsumerController {
+public class ProviderController {
+
 	@Autowired
-	private AppleFeignClient client;
+	private AppleService service;
 
-	@GetMapping("/getApple")
+	@GetMapping("/appleBigThan140G")
 	public List<AppleModel> getApple() {
-
-		return client.getApple();
+		return service.getAppleBigThan140G();
 	}
 }
