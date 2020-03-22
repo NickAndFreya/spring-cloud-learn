@@ -22,3 +22,10 @@
     
 ### 服务注册与启用远程调用
     启动类上添加@EnableDiscoveryClient启用服务注册与发现，@EnableFeignClients启用feign进行远程调用
+    
+    启动类添加 如下代码，测试基于Ribbon的负载均衡
+    @Bean
+    @LoadBalanced
+    public RestTemplate restTemplate() {
+    	return new RestTemplate();
+    }
