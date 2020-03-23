@@ -53,6 +53,11 @@ public class ConsumerRibbonController {
 		return result;
 	}
 
+	/**
+	 * GET 测试
+	 * @return
+	 * @throws URISyntaxException
+	 */
 	@GetMapping("/deptList")
 	public List<DeptModel> list() throws URISyntaxException {
 		URI url = new URI(urls.get("deptList"));
@@ -60,17 +65,31 @@ public class ConsumerRibbonController {
 		return list;
 	}
 
+	/**
+	 * POST 测试
+	 * @throws URISyntaxException
+	 */
 	@PostMapping("/saveDept")
 	public void save() throws URISyntaxException {
 		URI url = new URI(urls.get("saveDept"));
 		restTemplate.postForLocation(url, DeptModel.builder().id(6).name("董事会").build());
 	}
 
+	/**
+	 * PUT 测试
+	 * @param id
+	 * @throws URISyntaxException
+	 */
 	@PutMapping("/modify/{id}")
 	public void modify(@PathVariable("id") int id) throws URISyntaxException {
 		restTemplate.put(urls.get("modify"), null, id);
 	}
 
+	/**
+	 * DELETE 测试
+	 * @param index
+	 * @throws URISyntaxException
+	 */
 	@DeleteMapping("/deleteDept/{index}")
 	public void delete(@PathVariable("index") Integer index) throws URISyntaxException {
 		restTemplate.delete(urls.get("deleteDept"), index);
