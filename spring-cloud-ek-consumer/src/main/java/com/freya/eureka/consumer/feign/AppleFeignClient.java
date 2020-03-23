@@ -7,12 +7,17 @@ import org.springframework.web.bind.annotation.GetMapping;
 import java.util.List;
 
 /**
+ * 封装Feign方式接口
  * @author chengpiny
  * @version 1.0.0
  * @date 2020/3/21 23:02
  */
-@FeignClient("server-provider")
+@FeignClient(value = "server-provider",path = "/provider")
 public interface AppleFeignClient {
-	@GetMapping("/provider/appleBigThan140G")
+	/**
+	 * 调用provider提供的接口
+	 * @return
+	 */
+	@GetMapping("/appleBigThan140G")
 	List<AppleModel> getApple();
 }

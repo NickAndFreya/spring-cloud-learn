@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 /**
+ * Feign 方式调用
  * @author chengpiny
  * @version 1.0.0
  * @date 2020/3/21 23:02
