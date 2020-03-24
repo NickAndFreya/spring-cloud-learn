@@ -24,6 +24,9 @@
         <module>spring-cloud-zk-consumer</module>
         <module>spring-cloud-zk-provider</module>
         <module>spring-cloud-zk-zuul</module>
+        <module>spring-cloud-ek-provider</module>
+        <module>spring-cloud-ek-server</module>
+        <module>spring-cloud-ek-consumer</module>
     </modules>
 
     <dependencies>
