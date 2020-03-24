@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.freya</groupId>
-    <artifactId>spring-cloud-zookeeper-provider</artifactId>
+    <artifactId>spring-cloud-zk-provider</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-zookeeper-provider</name>
     <description>Demo project for Spring Boot</description>
