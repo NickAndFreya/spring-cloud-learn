@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <groupId>com.freya</groupId>
-    <artifactId>spring-cloud-ek-server1</artifactId>
+    <artifactId>spring-cloud-ek-server</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>spring-cloud-ek-server1</name>
     <description>Eureka project for Spring Boot</description>
