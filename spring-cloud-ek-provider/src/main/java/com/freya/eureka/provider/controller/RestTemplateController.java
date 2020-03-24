@@ -22,11 +22,11 @@ public class RestTemplateController {
 	@PostConstruct
 	private void init() {
 		list = new ArrayList();
-		list.add(DeptModel.builder().id(1).name("财务部").build());
-		list.add(DeptModel.builder().id(2).name("行政部").build());
-		list.add(DeptModel.builder().id(3).name("人事部").build());
-		list.add(DeptModel.builder().id(4).name("研发部").build());
-		list.add(DeptModel.builder().id(5).name("总裁办").build());
+		list.add(DeptModel.builder().id(1).name("财务部").location("杭州").build());
+		list.add(DeptModel.builder().id(2).name("行政部").location("杭州").build());
+		list.add(DeptModel.builder().id(3).name("人事部").location("杭州").build());
+		list.add(DeptModel.builder().id(4).name("研发部").location("杭州").build());
+		list.add(DeptModel.builder().id(5).name("总裁办").location("杭州").build());
 	}
 
 
