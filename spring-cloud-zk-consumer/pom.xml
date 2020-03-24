@@ -10,7 +10,7 @@
     <groupId>com.freya</groupId>
     <artifactId>spring-cloud-zookeeper-consumer</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>spring-cloud-zookeeper-consumer</name>
+    <name>spring-cloud-zk-consumer</name>
     <description>Demo project for Spring Boot</description>
 
     <properties>
