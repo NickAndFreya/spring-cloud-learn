@@ -27,6 +27,7 @@
         <module>spring-cloud-ek-provider</module>
         <module>spring-cloud-ek-server</module>
         <module>spring-cloud-ek-consumer</module>
+        <module>spring-cloud-gateway</module>
     </modules>
 
     <dependencies>
